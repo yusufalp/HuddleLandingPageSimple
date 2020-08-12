@@ -5,146 +5,185 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css">
+
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Poppins:400,700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
   <script src="https://kit.fontawesome.com/eeee9b5a6a.js" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
-  <title>Frontend Mentor | Huddle landing page with single introductory section</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    body {
-      background-color: hsl(257, 40%, 49%);
-      background-image: url('images/bg-desktop.svg');
-      font-family: 'Poppins', sans-serif;
-    }
-    h1 {
-      font-size: 2.5rem;
-      font-weight: 700;
-    }
-
-/* logo */
-    .logo-image {
-      margin: 50px 0 0 90px;
-      width: 200px;
-    }
-
-/* main content and image */
-    .main-image {
-      padding: 50px 0 0 100px;
-    }
-
-    .main-text {
-      color: white;
-      font-family: 'Open Sans', sans-serif;
-      font-weight: 400;
-      padding: 100px 5% 100px 10%;
-    }
-
-    .main-paragraph {
-      color: hsl(257, 40%, 85%);
-
-      font-size: 1.12rem;
-      padding: 20px 0;
-    }
-
-    .button-shape {
-      border-radius: 60px;
-      color: hsl(257, 40%, 55%);
-      padding: 10px 60px;
-    }
-
-/* social media buttons */
-    i {
-      border: 1px solid;
-      border-radius: 50%;
-      color: white;
-      margin: 5px;
-      opacity: .7;
-      padding: 15px;
-    }
-
-    i:hover {
-      opacity: 1;
-    }
-
-    .facebook {
-      padding: 15px 17px;
-    }
-
-    .social-media {
-      padding-left: 80%;
-    }
-
-/* footer */
-    .attribution {
-      font-size: 11px;
-      text-align: center;
-    }
-
-    .attribution a {
-      color: white;
-    }
-
-    @media (max-width: 1200px) {
-      h1 {
-        font-size: 1.5rem;
-        font-weight: 700;
-      }
-
-      .main-image {
-        max-width: 75%;
-        min-width: 50%;
-      }
-
-      .main-text {
-        text-align: center;
-        padding: 10%;
-      }
-
-      .social-media {
-        padding-left: 0;
-        text-align: center;
-      }
-    }
-
-  </style>
+  <title>Frontend Mentor | Huddle landing page with curved sections</title>
 </head>
 
 <body>
-
-  <div>
-    <img class="logo-image" src="images/logo.svg" alt="">
-  </div>
-
-  <div class="row">
-
-    <div class="col-xl-6">
-      <img class="main-image" src="images/illustration-mockups.svg" alt="">
+  <nav class="navigation-bar">
+    <div class="">
+      <img class="logo" src="images/logo.svg" alt="">
+      <button class="btn navigation-button" type="button" name="button">Try it free</button>
     </div>
+  </nav>
 
-    <div class="main-text col-xl-6">
-      <h1>Build The Community Your Fans Will Love</h1>
-      <p class="main-paragraph">
-        Huddle re-imagines the way we build communities. You have a voice, but so does your audience.
-        Create connections with your users as you engage in genuine discussion.
-      </p>
-      <button type="button" class="button-shape btn btn-light btn-lg">Register</button>
+  <div class="top-container">
+    <h1>Build The Community Your Fans Will Love</h1>
+    <p class="top-container-text">Huddle re-imagines the way we build communities.
+      You have a voice, but so does your audience. Create
+      connections with your users as you engage in
+      genuine discussion.</p>
+    <button class="btn top-container-button" type="button" name="button">Get Started For Free</button>
+  </div>
+
+  <img class="screen-mockups" src="images/screen-mockups.svg" alt="">
+
+  <div class="statistics-container">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-3 icon-full">
+          <h2><img class="icon-images" src="images/icon-communities.svg" alt="">1.4k+</h2>
+          <p class="icon-text">Communities Formed</p>
+        </div>
+        <div class="col-md-3"></div>
+        <div class="col-md-3 icon-full">
+          <h2><img class="icon-images" src="images/icon-messages.svg" alt="">2.7m+</h2>
+          <p class="icon-text">Messages Sent</p>
+        </div>
+        <div class="col-md-1"></div>
+      </div>
     </div>
   </div>
 
-  <div class="social-media">
-    <i class="fab fa-facebook-f facebook"></i>
-    <i class="fab fa-twitter"></i>
-    <i class="fab fa-instagram"></i>
+  <img class="bg-section-top1" src="images/bg-section-top-desktop-1.svg" alt="">
+  <div class="grow-together-container">
+    <div class="container">
+      <div class="row">
+        <div class="invisible-first">
+          <img class="grow-together-image" src="images/illustration-grow-together.svg" alt="">
+        </div>
+        <div class="col-md-6 grow-together-text">
+          <h3>Grow Together</h3>
+          <p>Generate meaningful discussions with your audience and
+            build a strong, loyal community.Think of the insightful
+            conversations you miss out on with a feedback form.</p>
+        </div>
+        <div class="col-md-6 invisible-later">
+          <img class="grow-together-image" src="images/illustration-grow-together.svg" alt="">
+        </div>
+      </div>
+    </div>
   </div>
+  <img class="bg-section-bottom1" src="images/bg-section-bottom-desktop-1.svg" alt="">
+
+  <div class="flowing-together-container">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <img class="flowing-together-image" src="images/illustration-flowing-conversation.svg" alt="">
+        </div>
+        <div class="col-md-6 flowing-together-text">
+          <h3>Flowing Conversations</h3>
+          <p>You wouldn't paginate a conversation in real life,
+            so why do it online? Our threads have
+            just-in-time loading for a more natural flow.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <img class="bg-section-top2" src="images/bg-section-top-desktop-2.svg" alt="">
+  <div class="your-users-container">
+    <div class="container">
+      <div class="row">
+        <div class="invisible-first">
+          <img class="your-users-image" src="images/illustration-your-users.svg" alt="">
+        </div>
+        <div class="col-md-6 your-users-text">
+          <h3>Your Users</h3>
+          <p>It takes no time at all to integrate Huddle with your app's
+            authentication solution. This means, once signed in to your app,
+            your users can start chatting immediately.</p>
+        </div>
+        <div class="col-md-6 invisible-later">
+          <img class="your-users-image" src="images/illustration-your-users.svg" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+  <img class="bg-section-bottom2" src="images/bg-section-bottom-desktop-2.svg" alt="">
+
+  <div class="bottom-container">
+    <h3>Ready To Build Your Community?</h3>
+    <button class="btn top-container-button" type="button" name="button">Get Started For Free</button>
+  </div>
+
+  <img class="bg-section-footer" src="images/bg-footer-top-desktop.svg" alt="">
+  <div class="footer-container">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-md-4 invisible-later">
+          <img class="bottom-logo" src="images/logo.svg" alt="">
+          <p class="footer-container-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Mauris nulla quam, hendrerit lacinia
+            vestibulum a, ultrices quis sem.</p>
+          <p class="contact-text"><i class="fas fa-phone-alt"></i>Phone: +1-543-123-4567</p>
+          <p class="contact-text"><i class="far fa-envelope"></i>example@huddle.com</p>
+        </div>
+
+        <div class="col-md-2"></div>
+
+        <div class="col-md-6 invisible-later">
+          <h4>Newsletter</h4>
+          <p class="footer-container-text newsletter-text">To recieve tips on how to grow your community, sign up to
+            our weekly newsletter. We’ll never
+            send you spam or pass on your email address</p>
+          <form class="form-inline">
+            <div class="form-group">
+              <input type="email" class="newsletter-input" id="inputPassword2" placeholder="">
+            </div>
+            <button type="submit" class="btn cta-button">Subscribe</button>
+          </form>
+        </div>
+
+        <div class="invisible-first newsletter-container">
+          <h4>Newsletter</h4>
+          <p class="footer-container-text newsletter-text">To recieve tips on how to grow your community, sign up to
+            our weekly newsletter. We’ll never
+            send you spam or pass on your email address</p>
+          <form class="form-inline">
+            <div class="form-group">
+              <input type="email" class="newsletter-input" id="inputPassword2" placeholder="">
+            </div>
+            <button type="submit" class="btn cta-button">Subscribe</button>
+          </form>
+        </div>
+
+        <div class="invisible-first">
+          <img class="bottom-logo" src="images/logo.svg" alt="">
+          <p class="footer-container-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Mauris nulla quam, hendrerit lacinia
+            vestibulum a, ultrices quis sem.</p>
+          <p class="contact-text"><i class="fas fa-phone-alt"></i>Phone: +1-543-123-4567</p>
+          <p class="contact-text"><i class="far fa-envelope"></i>example@huddle.com</p>
+        </div>
+
+        <div class="social-media">
+          <i class="fab fa-facebook-square"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-twitter-square"></i>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
 
   <footer>
     <p class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-      Coded by <a href="#" target="_blank">yalp</a>.
+      Coded by <a href="#">Your Name Here</a>.
     </p>
   </footer>
 </body>
