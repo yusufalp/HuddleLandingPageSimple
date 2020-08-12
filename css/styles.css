@@ -1,0 +1,300 @@
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+h1, h2, h3 {
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 6rem;
+}
+
+h3 {
+  font-size: 2.5rem;
+}
+
+p {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.navigation-bar {
+  padding-top: 50px;
+}
+
+.navigation-bar, .top-container {
+  margin-right: 10%;
+  margin-left: 10%;
+}
+
+.logo {
+  height: 40px;
+}
+
+.navigation-button {
+  color: hsl(322, 100%, 66%);
+  border: 1px solid;
+  border-radius: 50px;
+  box-shadow: 2px;
+  float: right;
+  padding: 6px 24px;
+  right: 0;
+  top: 20px;
+  width: 144px;
+}
+
+.top-container {
+  padding-top: 200px;
+  text-align: center;
+}
+
+.top-container-text {
+  margin: auto;
+  padding: 3% 0;
+  width: 50%;
+}
+
+.top-container-button {
+  color: #ffffff;
+  background-color: hsl(322, 100%, 66%);
+  border: 1px solid;
+  border-radius: 50px;
+  box-shadow: 2px;
+  font-size: 1.25rem;
+  padding: 24px 72px;
+  margin-top: 25px;
+  width: 400px;
+}
+
+.screen-mockups {
+  display: block;
+  margin: auto;
+  padding: 120px 0;
+  width: 75%;
+}
+
+.icon-images {
+  vertical-align: bottom;
+  display: block;
+}
+
+.icon-full {
+  margin: auto;
+}
+
+.icon-text {
+  font-size: 1.3rem;
+  text-align: center;
+}
+
+.bg-section-top1, .bg-section-bottom1,
+.bg-section-top2, .bg-section-bottom2,
+.bg-section-footer {
+  width: 100%;
+}
+
+.grow-together-container, .your-users-container {
+  background-color: hsl(207, 100%, 98%);
+}
+
+.flowing-together-container {
+  margin: 100px 0;
+}
+
+.grow-together-image, .flowing-together-image, .your-users-image {
+  width: 80%;
+}
+
+.grow-together-image, .your-users-image {
+  margin-left: 80px;
+}
+
+.flowing-together-image {
+  margin-right: 80px;
+}
+
+.grow-together-text, .flowing-together-text, .your-users-text {
+  margin: auto;
+}
+
+.bottom-container {
+  text-align: center;
+  margin: 150px 0;
+}
+
+.bottom-logo {
+  filter: invert();
+}
+
+.cta-button {
+  color: #ffffff;
+  background-color: hsl(322, 100%, 66%);
+  box-shadow: 2px;
+  border-radius: 5px;
+  vertical-align: bottom;
+  padding: 10px 25px;
+}
+
+.footer-container {
+  background-color: hsl(192, 100%, 9%);
+  color: #ffffff;
+  padding: 100px 0 200px 0;
+}
+
+.footer-container-text {
+  margin: 25px 0;
+}
+
+.newsletter-text {
+  padding-right: 160px;
+}
+
+.newsletter-input {
+  width: 360px;
+  margin-right: 30px;
+  border-radius: 5px;
+  height: 48px;
+}
+
+.fas, .far, .fab {
+  margin-right: 20px;
+}
+
+.contact-text {
+  opacity: 0.8;
+}
+
+.social-media {
+  margin: 50px 10px;
+  font-size: 2.5rem;
+}
+
+.invisible-first {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 4rem;
+  }
+
+  h3 {
+    text-align: center;
+  }
+
+  h4 {
+    margin-top: 75px;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  .logo {
+    width: 100px;
+    height: 50%;
+  }
+
+  .navigation-button {
+    font-size: .50rem;
+    width: auto;
+    height: auto;
+  }
+
+  .top-container-button {
+    font-size: .9rem;
+    padding: 16px 36px;
+    margin-top: 25px;
+    width: 250px;
+  }
+
+  .statistics-container {
+    margin: 70px 25%;
+    width: 50%;
+  }
+
+  .top-container {
+    padding-top: 100px;
+  }
+
+  .top-container-text {
+    width: 100%;
+  }
+
+  .icon-text {
+    font-size: 1.3rem;
+    text-align: left;
+  }
+
+  .icon-full {
+    margin: 20px 0;
+  }
+
+  .grow-together-image, .your-users-image, .flowing-together-image {
+    margin: 0 0 100px 0;
+    text-align: center;
+  }
+
+  .grow-together-text, .flowing-together-text, .your-users-text, h3 {
+    font-size: 1.5rem;
+    margin: auto;
+    text-align: center;
+  }
+
+  .grow-together-container, .your-users-container {
+    display: block;
+    margin: auto;
+    text-align: center;
+  }
+
+  .flowing-together-container {
+    display: block;
+    margin: 180px 0;
+    text-align: center;
+  }
+
+  .cta-button {
+    margin-top: 10px;
+  }
+
+  .social-media {
+    margin: 50px 15px;
+    font-size: 2rem;
+  }
+
+  .newsletter-container {
+    margin-bottom: 100px;
+  }
+
+  .newsletter-input {
+    width: 280px;
+    margin-right: 30px;
+    border-radius: 5px;
+    height: 48px;
+  }
+
+  .invisible-first {
+    display: block;
+  }
+
+  .invisible-later {
+    display: none;
+  }
+
+  .footer-container {
+    padding: 0 10%;
+  }
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
